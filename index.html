@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Turn one credential-expiry CSV into a portable renewal calendar."
+    />
+    <title>Credential Calendar Maker</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="maker" aria-labelledby="app-title">
+        <div class="eyebrow">Local CSV → calendar</div>
+        <h1 id="app-title">Make renewal dates hard to miss.</h1>
+        <p class="lede">
+          Drop one credential-expiry CSV. Get one calendar with 90, 60, 30, and
+          7-day reminders.
+        </p>
+
+        <label class="drop-zone" id="drop-zone" for="csv-file">
+          <input id="csv-file" type="file" accept=".csv,text/csv" />
+          <span class="drop-icon" aria-hidden="true">↓</span>
+          <strong id="file-title">Drop your CSV here</strong>
+          <span id="file-detail">or choose a file · stays on this device</span>
+        </label>
+
+        <div class="status" id="status" role="status" aria-live="polite">
+          <p id="status-message">Choose a CSV to make the calendar.</p>
+          <div class="result" id="result" hidden>
+            <p class="summary" id="summary"></p>
+            <a
+              id="download"
+              class="download"
+              download="credential-renewals.ics"
+            >
+              Download credential-renewals.ics
+            </a>
+          </div>
+        </div>
+
+        <p class="data-note">
+          Expected columns: employee_name, credential_name, expires_on.
+        </p>
+      </section>
+    </main>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>

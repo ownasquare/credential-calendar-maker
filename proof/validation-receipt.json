@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "validated_at": "2026-07-27T17:31:39-07:00",
+  "proof_class": "local_open_source_experiment",
+  "tests_passed": true,
+  "secret_scan_passed": true,
+  "license_check_passed": true,
+  "browser_proof": {
+    "status": "passed",
+    "details": "The in-app Browser proved page identity, meaningful content, empty state, automatic local success, friendly recovery, and an empty warning/error console. Repository Playwright proved the real file-to-download flow, interaction budget, keyboard focus, forbidden-control contract, and responsive automatic light/dark matrix."
+  },
+  "environment": {
+    "operating_system": "macOS 26.3 build 25D5112c",
+    "node": "v23.6.0",
+    "npm": "11.6.0",
+    "playwright": "1.62.0",
+    "browser": "Chromium through Playwright plus the Codex in-app Browser",
+    "data_integrity": "invented_fixture_data_only",
+    "localhost_integrity": "real static server at 127.0.0.1:4173 with production source modules"
+  },
+  "scope": [
+    "bounded local UTF-8 CSV parsing",
+    "documented header alias mapping",
+    "strict non-ambiguous date normalization",
+    "duplicate, invalid, and overdue row classification",
+    "deterministic RFC 5545-shaped calendar generation",
+    "stable UIDs, escaping, line folding, all-day events, and four reminders",
+    "automatic file processing and browser Blob download",
+    "two-action minimum-interaction path",
+    "friendly recovery states",
+    "keyboard focus and status semantics",
+    "phone, tablet, and desktop responsive behavior",
+    "automatic light and dark appearance",
+    "package, dependency, license, secret, and repository policy"
+  ],
+  "results": {
+    "tests_passed": true,
+    "unit_test_count": 7,
+    "playwright_test_count": 5,
+    "format_check_passed": true,
+    "lint_check_passed": true,
+    "type_check_passed": true,
+    "dependency_audit_passed": true,
+    "dependency_vulnerability_count": 0,
+    "secret_scan_passed": true,
+    "license_check_passed": true,
+    "clean_install_passed": true,
+    "package_dry_run_passed": true,
+    "interaction_budget": {
+      "status": "passed",
+      "shortest_path": [
+        "select or drop one CSV; processing starts automatically",
+        "activate the generated download link"
+      ],
+      "additional_interactions": "none",
+      "redundant_actions": "none"
+    },
+    "accessibility_responsive_proof": {
+      "status": "passed",
+      "keyboard_upload_focus": "passed with visible focus outline",
+      "aria_live_status": "polite",
+      "horizontal_overflow": "none at 375, 768, and 1440 CSS pixels",
+      "screenshots_inspected": 6,
+      "screenshots": [
+        "test-results/visual-proof/phone-light.png",
+        "test-results/visual-proof/phone-dark.png",
+        "test-results/visual-proof/tablet-light.png",
+        "test-results/visual-proof/tablet-dark.png",
+        "test-results/visual-proof/desktop-light.png",
+        "test-results/visual-proof/desktop-dark.png"
+      ]
+    }
+  },
+  "commands": [
+    "npm ci",
+    "npm run format",
+    "npm run validate",
+    "npm pack --dry-run"
+  ],
+  "observations": [
+    "Initial rendered inspection found the generated-download block visible before processing because its grid rule overrode the hidden attribute; a global hidden contract fixed the defect and every state was re-proved.",
+    "The first Playwright interaction assertion incorrectly counted the accessible file input as a redundant button; it now requires exactly one necessary upload role and zero HTML button elements.",
+    "Initial development tool pins exposed seven high-severity advisories; removing the unnecessary ESLint dependency and updating Playwright reduced npm audit to zero vulnerabilities.",
+    "A runner wrapper removes conflicting inherited color-control variables before spawning Playwright, producing clean output without warning suppression.",
+    "Every screenshot produced by the final validation run was inspected and showed no clipping, overflow, unreadable state, blank page, or framework overlay."
+  ],
+  "proof_boundaries": {
+    "local": "passed",
+    "github_publication": "pending",
+    "hosted": "not_run",
+    "production": "not_run",
+    "provider": "not_run",
+    "payment": "not_run",
+    "demand": "public_pain_evidence_only_no_customer_or_usage_proof"
+  },
+  "warning_issue_triage": {
+    "status": "resolved",
+    "suppression": "none",
+    "details": "All source, dependency, browser, formatting, type, and harness warnings were fixed or removed at the cause."
+  }
+}
