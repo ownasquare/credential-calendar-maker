@@ -87,7 +87,7 @@
   ],
   "proof_boundaries": {
     "local": "passed",
-    "github_publication": "pending",
+    "github_publication": "passed_public_main",
     "hosted": "not_run",
     "production": "not_run",
     "provider": "not_run",
@@ -98,5 +98,14 @@
     "status": "resolved",
     "suppression": "none",
     "details": "All source, dependency, browser, formatting, type, and harness warnings were fixed or removed at the cause."
+  },
+  "publication_receipt": {
+    "repository_url": "https://github.com/ownasquare/credential-calendar-maker",
+    "visibility": "public",
+    "default_branch": "main",
+    "first_verified_sha": "8fa9b7a155bd1fe11af9b42b997514f36870cde4",
+    "first_local_remote_equal": true,
+    "first_api_readback": true,
+    "note": "The immutable completed-app record and Lane 12 closeout store the exact final evidence-follow-up SHA because this receipt cannot contain the SHA of the commit that adds its own publication fields."
   }
 }

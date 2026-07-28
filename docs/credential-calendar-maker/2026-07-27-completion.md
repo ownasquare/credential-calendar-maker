@@ -59,12 +59,22 @@ or result-opening action exists.
 
 ## Push evidence
 
-Pending authorized scoped publication after the clean local commit.
+- Repository: `https://github.com/ownasquare/credential-calendar-maker`
+- Visibility: public
+- Default branch: `main`
+- First verified publication SHA:
+  `8fa9b7a155bd1fe11af9b42b997514f36870cde4`
+- First publisher readback: local and remote SHA matched; repository creation,
+  public visibility, and default branch were verified.
+- The exact final evidence-follow-up SHA is recorded by the second scoped
+  publisher receipt, immutable completed-app registry record, and Lane 12
+  closeout.
 
 ## Proof labels
 
 - Local proof: passed
-- GitHub publication proof: pending
+- GitHub publication proof: passed for public `main`; final evidence follow-up
+  readback pending
 - Hosted proof: not run
 - Production proof: not run
 - Provider proof: not run
