@@ -82,7 +82,8 @@
     "The first Playwright interaction assertion incorrectly counted the accessible file input as a redundant button; it now requires exactly one necessary upload role and zero HTML button elements.",
     "Initial development tool pins exposed seven high-severity advisories; removing the unnecessary ESLint dependency and updating Playwright reduced npm audit to zero vulnerabilities.",
     "A runner wrapper removes conflicting inherited color-control variables before spawning Playwright, producing clean output without warning suppression.",
-    "Every screenshot produced by the final validation run was inspected and showed no clipping, overflow, unreadable state, blank page, or framework overlay."
+    "Every screenshot produced by the final validation run was inspected and showed no clipping, overflow, unreadable state, blank page, or framework overlay.",
+    "The first staged diff check found two Markdown hard-break trailing spaces; the evidence-only follow-up removes them, reruns formatting and secret checks, and requires a clean staged diff before publication."
   ],
   "proof_boundaries": {
     "local": "passed",

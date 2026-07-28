@@ -1,7 +1,7 @@
 # Credential Calendar Maker completion record
 
-Date: 2026-07-27  
-Claim: `20260727T171118-0700-lane12-credential-calendar-maker`  
+Date: 2026-07-27
+Claim: `20260727T171118-0700-lane12-credential-calendar-maker`
 Lane: 12 — People and workforce operations
 
 ## Delivered outcome
@@ -41,10 +41,21 @@ or result-opening action exists.
 
 ## Commit evidence
 
-The validated source commit is created after this evidence is finalized. Its
-exact SHA and committed paths are recorded in the evidence-only follow-up, the
-immutable completed-app registry record, and the Lane 12 closeout. A file cannot
-contain the SHA of the commit that first contains itself.
+- App path:
+  `/Users/fortunevieyra/Documents/Github/ai-projects/factory-apps/lane-12/credential-calendar-maker`
+- Branch: `main`
+- Validated source commit:
+  `db247623054ecd8a414a32f98b5ed7851fbd7613`
+- Source commit paths: 31 repository files covering application source, tests,
+  scripts, open-source documentation, product decisions, completion/handoff
+  records, fixtures, lockfile, and validation receipt.
+- Validation commands: `npm ci`, `npm run validate`,
+  `npm pack --dry-run`, `git diff --cached --check`.
+- The staged diff check found two Markdown hard-break spaces in this document;
+  the evidence-only follow-up removes them and is rechecked before publication.
+- The exact final publication SHA is recorded by the scoped publisher,
+  immutable completed-app registry record, and Lane 12 closeout. A file cannot
+  contain the SHA of the commit that contains its own final-SHA update.
 
 ## Push evidence
 
